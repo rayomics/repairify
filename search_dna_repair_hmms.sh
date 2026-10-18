@@ -181,6 +181,7 @@ for faaFile in "$SUBJECT_DIR"/*.faa; do
 
         hmmsearch \
             --tblout "$SAMPLE_OUTPUT/${HMM_PREFIX}.tblout" \
+            --domtblout "$SAMPLE_OUTPUT/${HMM_PREFIX}.domtblout" \
             "$hmmFile" \
             "$faaFile" \
             > "$SAMPLE_OUTPUT/${HMM_PREFIX}.txt"
